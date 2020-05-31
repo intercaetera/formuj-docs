@@ -7,6 +7,9 @@ module.exports = {
   organizationName: 'intercaetera', // Usually your GitHub org/user name.
   projectName: 'formuj', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/vsDark')
+    },
     navbar: {
       title: 'Formuj',
       logo: {
