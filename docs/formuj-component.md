@@ -3,9 +3,9 @@ id: formuj-component
 title: The Formuj component
 ---
 
-The `<Formuj />` component renders the schema into an actual form that can be seen in the DOM. It accepts the following props.
+The `<Formuj />` component renders the schema into an actual form that can be seen in the DOM. It is actually a wrapper around `<FormikProvider />` and `<Form />` components. You can read more about those in [Breaking out of Formuj](breaking-out-of-formuj).
 
-The Formuj component is actually a wrapper around `<FormikProvider />` and `<Form />` components. You can read more about those in [Breaking out of Formuj](breaking-out-of-formuj).
+The Formuj component takes the following props.
 
 ### `schema`
 

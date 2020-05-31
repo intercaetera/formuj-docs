@@ -7,13 +7,16 @@
 
 /* You can override the default Infima variables here. */
 :root {
---ifm-color-primary: #cc002f;
---ifm-color-primary-dark: #b8002a;
---ifm-color-primary-darker: #ad0028;
---ifm-color-primary-darkest: #8f0021;
---ifm-color-primary-light: #e00034;
---ifm-color-primary-lighter: #eb0036;
---ifm-color-primary-lightest: #ff0a43;
+  --ifm-color-primary: #cc002f;
+  --ifm-color-primary-dark: #b8002a;
+  --ifm-color-primary-darker: #ad0028;
+  --ifm-color-primary-darkest: #8f0021;
+  --ifm-color-primary-light: #e00034;
+  --ifm-color-primary-lighter: #eb0036;
+  --ifm-color-primary-lightest: #ff0a43;
+
+  --ifm-color-content: #aaa;
+  --ifm-color-secondary: #000;
   --ifm-code-font-size: 95%;
 }
 
@@ -26,4 +29,19 @@
 
 .prism-code > div {
   background-color: transparent !important;
+}
+
+code {
+  background-color: transparent;
+}
+
+.alert--secondary {
+  color: var(--ifm-color-content);
+}
+.alert--secondary code {
+  color: white;
+}
+.alert--secondary svg {
+  fill: white;
+  stroke: white;
 }
