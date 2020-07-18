@@ -92,3 +92,23 @@ const schema = [
 ```
 
 In both cases the array of options must contain objects with `label` and `value` keys.
+
+### `readOnly`
+
+This property informs the underlying Formik provider that it should not include this field in its initial values. In practice, this can be used to create fields that depend on other fields, but do not accept user input. It also allows for handling form inputs in components outside of Formik should you need to.
+
+In most applications, `readOnly` should be combined with `valueGetter`.
+
+### `valueGetter`
+
+This property should be a function, which will be called with an object containing the following keys:
+
+- `formContext`
+- `formik`
+- `name` (field name)
+
+Value getters allow for fields which derive their value from other fields or from the context rather than user input.
+
+### `conditions`
+
+This is an array of conditions that should be applied to this field. For more details see [Conditional rendering](conditional-rendering).

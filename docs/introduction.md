@@ -15,7 +15,7 @@ npm install --save formuj
 
 ## Basic concepts
 
-The centre of Formuj is a form schema. It is simply an array of fields that will be rendered in your form. The schema is the central point of the construction of your form.
+The centre of Formuj is a form schema. It is simply an array of fields that will be rendered in your form. The schema is the primary way of constructing your forms.
 
 ```javascript
 import React from 'react';
