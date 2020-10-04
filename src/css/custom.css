@@ -15,7 +15,6 @@
   --ifm-color-primary-lighter: #eb0036;
   --ifm-color-primary-lightest: #ff0a43;
 
-  --ifm-color-content: #aaa;
   --ifm-color-secondary: #000;
   --ifm-code-font-size: 95%;
 }
@@ -25,10 +24,6 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-.prism-code > div {
-  background-color: transparent !important;
 }
 
 code {

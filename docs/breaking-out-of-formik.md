@@ -52,6 +52,7 @@ This component takes the following props:
 - [`schema`](formuj-component#schema)
 - [`onSubmit`](formuj-component#onSubmit)
 - [`validationContext`](formuj-component#validationContext)
+- `innerRef` - this parameter accepts a ref that will resolve to an object with the previous three properties should you ever need to update your form from the outside.
 - `renderForm` - this is a [render prop](https://reactjs.org/docs/render-props.html), a function that will be called with an object containing keys `formik` and `schema`.
 
 ## `<Form />`
