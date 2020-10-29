@@ -15,6 +15,16 @@ The primary reasons why you might want to break out of the `<Formuj />` componen
 
 - You need to provide additional data to the form context.
 
+## `<FormikProvider />`
+
+This component takes the following props:
+
+- [`schema`](formuj-component#schema)
+- [`onSubmit`](formuj-component#onSubmit)
+- [`validationContext`](formuj-component#validationContext)
+- `innerRef` - this parameter accepts a ref that will resolve to an object with the previous three properties should you ever need to update your form from the outside.
+- `renderForm` - this is a [render prop](https://reactjs.org/docs/render-props.html), a function that will be called with an object containing keys `formik` and `schema`.
+
 ```jsx
 import { Form, FormikProvider } from 'formuj';
 
@@ -45,15 +55,9 @@ const MyForm = () => {
 }
 ```
 
-## `<FormikProvider />`
+## `useFormuj`
 
-This component takes the following props:
-
-- [`schema`](formuj-component#schema)
-- [`onSubmit`](formuj-component#onSubmit)
-- [`validationContext`](formuj-component#validationContext)
-- `innerRef` - this parameter accepts a ref that will resolve to an object with the previous three properties should you ever need to update your form from the outside.
-- `renderForm` - this is a [render prop](https://reactjs.org/docs/render-props.html), a function that will be called with an object containing keys `formik` and `schema`.
+This hook takes the same props as `<FormikProvider />`, with the exception of `renderForm`.
 
 ```jsx
 import { Form, useFormuj } from 'formuj';
@@ -79,10 +83,6 @@ const MyForm = () => {
   );
 }
 ```
-
-## `useFormuj`
-
-This hook takes the same props as `<FormikProvider />`, with the exception of `renderForm`.
 
 ## `<Form />`
 
