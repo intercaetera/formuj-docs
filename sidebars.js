@@ -7,5 +7,6 @@ module.exports = {
     'validation',
     'breaking-out-of-formuj',
     'conditional-rendering',
+    'form-partials',
   ],
 };
